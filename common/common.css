@@ -1,0 +1,46 @@
+
+.nameSite
+{
+  background-color: rgb(33, 33, 33);
+  font-family: Arial Black,Arial Bold,Gadget,sans-serif;
+  margin-left: 5px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.gif
+{
+  height: 30px;
+}
+.about
+{
+  font-size: x-small;
+  color : rgb(158, 158, 158);
+  align-self: center;
+  text-decoration: none;
+}
+.-about
+{
+  font-size: x-small;
+  color : rgb(158, 158, 158);
+}
+.back
+{
+  color: blue;
+}
+.page
+{
+  flex-direction: row;
+  display: flex;
+}
+img
+{
+  margin: auto auto auto auto;
+}
+h1,h2,h3,h4,h5,h6
+{
+  white-space: nowrap;
+}
+a
+{
+  color: blue;
+}
