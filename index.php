@@ -16,15 +16,20 @@ VisitorsManager::addUniqueVisitorsHome();
     <meta name="viewport"                   content="width=device-width, user-scalable=no">
     <meta name="description"                content="">
     <meta name="keywords"                   content="">
-    <link rel="stylesheet"                  href="/MyDiv-web/common/normalize.css" />
+
+    <link rel="apple-touch-icon" sizes="120x120" href="/MyDiv-web/dataweb/icon/icon.png"/>
+    <link rel="apple-touch-icon" sizes="152x152" href="/MyDiv-web/dataweb/icon/icon.png"/>
+    <link rel="icon"                        href="/MyDiv-web/dataweb/icon/icon.png"/>
+
     <style>
+    <?php require $_SERVER['DOCUMENT_ROOT']."/MyDiv-web/common/normalize.css";?>
     <?php require $_SERVER['DOCUMENT_ROOT']."/MyDiv-web/common/scrollbar.css";?>
     <?php require $_SERVER['DOCUMENT_ROOT']."/MyDiv-web/common/common.css";?>
     <?php require $_SERVER['DOCUMENT_ROOT']."/MyDiv-web/index.css";?>
     </style>
 
   </head>
-  <body style="background: rgb(224, 224, 224) none repeat scroll 0% 0%;">
+  <body style="">
 
     <div id ="header">
       <div class="bar_menu">
@@ -35,9 +40,8 @@ VisitorsManager::addUniqueVisitorsHome();
       </div>
       <div class="mini_bar_menu">
         <select class="anchor_mini_bar_menu" name="">
-
-          <option value="English">English</option>
           <option value="Français">Français</option>
+          <option value="English">English</option>
         </select>
         <a class="anchor_mini_bar_menu" href="">Donate</a>
       </div>
@@ -45,25 +49,32 @@ VisitorsManager::addUniqueVisitorsHome();
 
     <div id="separatordiv_form_register" style="height: 1px; width: 100%; background-color: rgb(158, 158, 158);display: flex;"></div>
 
-    <div id="center" class="center">
-      <div id="head" class="center">
-        <h1 class="title">MyDiv.js</h1>
-        <h2 class="title">MyDiv.js</h2>
+
+    <div class="page">
+
+      <div id="void_left" ></div>
+      <div id'center_continer' class="center">
+        <div id="head" class="center">
+          <h1 id='name_lib'class="title">MyDiv.js</h1>
+          <h2 class="title">Simplicité, Facilité, Accessible</h2>
+        </div>
+        <div class="description" style ="margin: 5%;">
+          <?php require $_SERVER['DOCUMENT_ROOT']."/MyDiv-web/includes/language/".NavigatorLanguage::getLanguage()."/homeDescription.php"?>
+        </div>
+        <hr id="separatordiv_form_register" style="background-color: rgb(158, 158, 158);   margin: auto auto auto auto; ">
+        <div class="mini_learn" style ="margin: 5%;">
+          <?php require $_SERVER['DOCUMENT_ROOT']."/MyDiv-web/includes/language/".NavigatorLanguage::getLanguage()."/homeMiniLearn.php"?>
+        </div>
+        <hr id="separatordiv_form_register">
+        <div class="text_about" style ="margin: 5%;">
+          <?php require $_SERVER['DOCUMENT_ROOT']."/MyDiv-web/includes/language/".NavigatorLanguage::getLanguage()."/homeAbout.php"?>
+        </div>
       </div>
-      <div class="description">
-        <?php require $_SERVER['DOCUMENT_ROOT']."/MyDiv-web/includes/language/".NavigatorLanguage::getLanguage()."/homeDescription.php"?>
-      </div>
-      <div id="separatordiv_form_register" style="height: 1px; width: 80%; background-color: rgb(158, 158, 158);   margin: auto auto auto auto; display: flex;"></div>
-      <div class="mini_learn">
-        <?php require $_SERVER['DOCUMENT_ROOT']."/MyDiv-web/includes/language/".NavigatorLanguage::getLanguage()."/homeMiniLearn.php"?>
-      </div>
-      <div id="separatordiv_form_register" style="height: 1px; width: 80%; background-color: rgb(158, 158, 158);   margin: auto auto auto auto; display: flex;"></div>
-      <div class="text_about">
-        <?php require $_SERVER['DOCUMENT_ROOT']."/MyDiv-web/includes/language/".NavigatorLanguage::getLanguage()."/homeAbout.php"?>
-      </div>
+      <div id="void_rigth"></div>
+
     </div>
 
-    <div id="separatordiv_form_register" style="height: 1px; width: 100%; background-color: rgb(158, 158, 158); display: flex;"></div>
+    <hr id="separatordiv_form_register" >
 
     <div id="foot">
       <div id="foot_container">
@@ -75,5 +86,6 @@ VisitorsManager::addUniqueVisitorsHome();
   </body>
   <footer>
     <script type="text/javascript" src="/MyDiv/MyDivDev.js"></script>
+    <script type="text/javascript" src="/MyDiv-web/index.js"></script>
   </footer>
 </html>
