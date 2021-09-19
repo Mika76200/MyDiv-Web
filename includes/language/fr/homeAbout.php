@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html>
+
+
 <div id="mini_About_container">
   <div id="mini_About_img_container">
 
@@ -16,4 +16,3 @@
     <a class='more' href="https://github.com/Mika76200/MyDiv.js">Github</a>
   </div>
 </div>
-</html>

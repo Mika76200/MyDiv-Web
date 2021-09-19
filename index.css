@@ -1,18 +1,5 @@
 
-#header
-{
-  width: 100%;
-  height: 5%;
-  background-color: black;
-  position: fixed;
-  align-items: center;
-  display: grid;
-}
-#head
-{
-  flex-direction: column;
-  display: flex;
-}
+
 .title
 {
   align-self: center;
@@ -20,16 +7,6 @@
 #name_lib
 {
   font-size: 5em;
-}
-#foot
-{
-  margin: 2%;
-}
-#foot_container
-{
-  flex-direction: row;
-  justify-content: center;
-  display: flex;
 }
 #mini_learn_container,#mini_description_container,#mini_About_container
 {
@@ -43,62 +20,4 @@
   flex-direction: column;
   justify-content: center;
   display: flex;
-}
-.more
-{
-  justify-content: end;
-  display: flex;
-  font-size: small;
-  color : rgb(158, 158, 158);
-}
-.more_left
-{
-
-  font-size: small;
-  color : rgb(158, 158, 158);
-}
-.center
-{
-  margin-top: 5%;
-}
-.mini_bar_menu
-{
-  flex-direction: row;
-  justify-content: end;
-  display: flex;
-}
-.bar_menu
-{
-	flex-direction: row;
-	justify-content: space-around;
-  display: flex;
-}
-.anchor_mini_bar_menu
-{
-  font-size: medium;
-  color: black;
-}
-.anchor_bar_menu
-{
-  font-size: xx-large;
-  color: white;
-}
-#void_left,#void_rigth
-{
-  width:30%;
-  height:100%;
-  display: flex;
-}
-@media screen and (max-width:400px)
-{
-  *
-  {
-    font-size: 13px;
-  }
-  #viod_left,#viod_rigth
-  {
-    width:0px;
-    height:0px;
-    display: none;
-  }
 }

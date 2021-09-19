@@ -37,13 +37,7 @@ VisitorsManager::addUniqueVisitorsHome();
         <a class="anchor_bar_menu" href="/MyDiv-web/learn/learn.php">Learn</a>
         <a class="anchor_bar_menu" href="/MyDiv-web/download/download.php">Download</a>
         <a class="anchor_bar_menu" href="/MyDiv-web/development/development.php">Development</a>
-      </div>
-      <div class="mini_bar_menu">
-        <select class="anchor_mini_bar_menu" name="">
-          <option value="Français">Français</option>
-          <option value="English">English</option>
-        </select>
-        <a class="anchor_mini_bar_menu" href="">Donate</a>
+        <a class="anchor_bar_menu" class="anchor_mini_bar_menu" href="/MyDiv-web/donate/donate.php">Donate</a>
       </div>
     </div>
 
@@ -78,9 +72,9 @@ VisitorsManager::addUniqueVisitorsHome();
 
     <div id="foot">
       <div id="foot_container">
-        <a class="about" href="">Donate - </a>
+        <a class="about" href="/MyDiv-web/donate/donate.php">Donate - </a>
         <a class="about" href="https://github.com/Mika76200/MyDiv.js">Github - </a>
-        <a class="about" href="/MyDiv-web/index.php">About</a>
+        <a class="about" href="/MyDiv-web//about/about.php">About</a>
       </div>
     </div>
   </body>

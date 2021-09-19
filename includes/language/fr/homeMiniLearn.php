@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html>
+
   <div id="mini_learn_container">
     <div id="mini_learn_text_container" style="margin-left: 10px;text-align: justify;">
       <h3>Facilité</h3>
@@ -49,4 +48,3 @@ var divPreview = new MyDisplayDivVertical("MyDiv.js");<br>
         <img src="/MyDiv-web/dataweb/image/exemple.png" alt="erxemple coding">
     </div>
   </div>
-</html>

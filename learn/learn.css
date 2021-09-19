@@ -1,0 +1,15 @@
+
+
+.code
+{
+  background-color: rgb(158, 158, 158,0.3);
+}
+.paragraphe
+{
+  style="margin: 10px 0;padding: 5px;width: 50%"
+}
+.preview_tuto
+{
+  justify-content: center;
+  display: flex;
+}

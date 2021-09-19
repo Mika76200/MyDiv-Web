@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html>
+
+
 <div id="mini_description_container" style="">
   <div id="mini_description_img_container">
     <div id ='preview_MyDiv.js' style='width:400px;height:400px;display:flex;'>
@@ -20,4 +20,3 @@
       <a class='more' href="/MyDiv/MyDiv.js" download="/MyDiv/MyDiv.js">Download</a>
   </div>
 </div>
-</html>

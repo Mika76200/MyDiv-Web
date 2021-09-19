@@ -49,6 +49,6 @@ require_once($_SERVER['DOCUMENT_ROOT'].'/MyDiv-web/includes/language/NavigatorLa
   </body>
   <footer>
     <script type="text/javascript" src="/MyDiv/MyDivDev.js"></script>
-    <script type="text/javascript" src="/MyDiv-web/download/download.js"></script>
+    <script type="text/javascript" src="/MyDiv-web/donate/donate.js"></script>
   </footer>
 </html>
