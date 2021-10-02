@@ -11,7 +11,7 @@ require_once($_SERVER['DOCUMENT_ROOT'].'/MyDiv-web/includes/language/NavigatorLa
   <head>
     <meta charset="UTF-8"/>
     <meta http-equiv="content-language"     content="FR-fr">
-    <title>MyDiv.js - Learn</title>
+    <title>MyDiv.js - Developpment</title>
     <meta property="og:site_name"           content="mydiv.js.org"/>
     <meta name="viewport"                   content="width=device-width, user-scalable=no">
     <meta name="description"                content="">
@@ -50,6 +50,8 @@ require_once($_SERVER['DOCUMENT_ROOT'].'/MyDiv-web/includes/language/NavigatorLa
   </body>
   <footer>
     <script type="text/javascript" src="/MyDiv/MyDivDev.js"></script>
+    <script type="text/javascript" src="/MyDiv-web/js/common/MyDivHeaderBarMenu.js"></script>
+    <script type="text/javascript" src="/MyDiv-web/js/common/MyDivFoot.js"></script>
     <script type="text/javascript" src="/MyDiv-web/development/development.js"></script>
   </footer>
 </html>

@@ -3,8 +3,9 @@
   <div id="into_container">
     <h3>Introduction</h3>
     <p class="paragraphe">
+
       Ce petit tutoriel a pour but de metre en place une première Div et d'expliquer les bases de lalibrairie.<br>
-      Tous d'abord ajouter My Div.js à votre projet en écrivant cette ligne :
+      Tous d'abord <a href="/MyDiv-web/download/download.php">télécharger</a> et ajouter My Div.js à votre projet en écrivant cette ligne :
       <pre class="code">
         <br>
         <spam >Depuis le site web :</spam>
