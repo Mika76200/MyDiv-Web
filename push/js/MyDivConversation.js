@@ -79,6 +79,7 @@ class MyDivConversation extends MyInsideDivVertical
   constructor(id,p)
   {
     super("inside_"+id,p);
+    this.dataConversation = new DataConversation();
     this.deleteMargin();
     this.setOverFlowY();
     this.idUserTchat = id;
@@ -88,12 +89,12 @@ class MyDivConversation extends MyInsideDivVertical
   addMessage(message)
   {
     this.inserDiv(new MyDivMessage(message,this.idUserTchat));
+    this.setScrollBarTop();
   }
-  setConversation()
+  setConversation(data)
   {
-    var listMessage = DataConversation.getData();
-
-    listMessage.forEach((item)=>{
+    this.dataConversation.setConversation(data['listMessage']);
+    this.dataConversation.forEach((item)=>{
         this.addMessage(item);
     });
 

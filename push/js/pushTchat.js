@@ -11,3 +11,7 @@
 
       tchat2 = new MyDivUserTchat('tchat_2',2);
       user2Div.inserDiv(tchat2);
+
+      ///// push quand tout estpret
+      tchat1.sendRequestPush();
+      //tchat2.sendRequestPush();

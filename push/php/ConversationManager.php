@@ -7,6 +7,7 @@
 class ConversationManager
 {
   static $maxMessage = 50;
+  static $timeout = 30;
   static function readConversation():bool
   {
     /*
@@ -24,6 +25,16 @@ class ConversationManager
   {
     $conversation = new ListMessageConversation(File::readFileConvers());
     return $conversation->getConversation();
+  }
+  static function sendListLastMessage():array
+  {
+    // initialise la reponce
+    $reponse= null;
+    if($reponse)
+    {
+        return array('reponse' => TIMEOUT);
+    }
+    return array('reponse' => NOREPONSE);;
   }
   static function addMessage():bool
   {

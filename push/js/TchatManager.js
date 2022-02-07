@@ -23,4 +23,13 @@ class TchatManager
         form.append('idUser',idUser);
         sendResquetFormReponceJson(form,'/MyDiv-web/push/php/deleteMessage.php',CALLBACK);
   }
+  /////pushTchat
+  static sendRequestPush(idUser,idLastMessage,CALLBACK)
+  {
+    var form = new FormData();
+        form.append('idLastMessage',idLastMessage);
+        form.append('idUser',idUser);
+        sendResquetFormReponceJsonAsynchrone(form,'/MyDiv-web/push/php/getMessagePush.php',CALLBACK);
+  }
+
 }

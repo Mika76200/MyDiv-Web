@@ -2,20 +2,21 @@
 
 class DataConversation
 {
-  static init()
+  constructor()
   {
-    this.conversation = null;
+    this.convers = null;
   }
-  static setData(data)
+  setConversation(data)
   {
-    this.init();
-    if(data !== 0)
-    {
-      this.conversation = data['listMessage'];
-    }
+
+    this.convers = data
   }
-  static getData()
+  forEach(CALLBACK)
   {
-    return this.conversation;
+    this.convers.forEach(CALLBACK);
+  }
+  getData()
+  {
+    return this.convers;
   }
 }

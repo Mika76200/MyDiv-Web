@@ -38,7 +38,7 @@
     <div id='center_continer' class="center">
       <div id="content" >
         <h1 class="title">Push tchat MyDiv </h1>
-        <h2 class="title">tcat</h2>
+        <h2 class="title">tchat</h2>
         <div class="tchat">
           <div class="user1" id="user1">
             <h3 class="title">user1</h3>
