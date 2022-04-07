@@ -38,14 +38,14 @@ class File
     array_pop($content);
     return $content;
   }
-  static function writeFileConvers(int $idUser,string $message):bool
+  static function writeFileConvers(int $idNewMessage,int $idUser,string $message):bool
   {
     if(!File::$file)
     {
       File::openfileConvers( "a");
     }
 
-    fwrite(File::$file,$idUser.File::$separator.$message.File::$separator.date('l jS \of F Y h:i:s A').File::$endl);
+    fwrite(File::$file,$idNewMessage.File::$separator.$idUser.File::$separator.$message.File::$separator.date('l jS \of F Y h:i:s A').File::$endl);
     File::closeFile();
     return true;
   }

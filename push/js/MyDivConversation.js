@@ -79,7 +79,7 @@ class MyDivConversation extends MyInsideDivVertical
   constructor(id,p)
   {
     super("inside_"+id,p);
-    this.dataConversation = new DataConversation();
+    MyRef.add(NAME_REF_DATA_CONVERSATIO+id,new DataConversation());
     this.deleteMargin();
     this.setOverFlowY();
     this.idUserTchat = id;
@@ -93,10 +93,19 @@ class MyDivConversation extends MyInsideDivVertical
   }
   setConversation(data)
   {
-    this.dataConversation.setConversation(data['listMessage']);
-    this.dataConversation.forEach((item)=>{
+    MyRef.get(NAME_REF_DATA_CONVERSATIO+this.idUserTchat).setConversation(data['listMessage']);
+    MyRef.get(NAME_REF_DATA_CONVERSATIO+this.idUserTchat).forEach((item)=>{
         this.addMessage(item);
     });
 
+  }
+  addNewMessage(data)
+  {
+    MyRef.get(NAME_REF_DATA_CONVERSATIO+this.idUserTchat).addNewMessage(data);
+    this.addMessage(MyRef.get(NAME_REF_DATA_CONVERSATIO+this.idUserTchat).getLastMessage());
+  }
+  getIDLastMessage()
+  {
+    return MyRef.get(NAME_REF_DATA_CONVERSATIO+this.idUserTchat).getIDLastMessage();
   }
 }

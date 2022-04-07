@@ -19,6 +19,13 @@ class MyDivAddMessage extends MyInsideDivHorizontal
   }
   sendMessage()
   {
-    TchatManager.sendMessage(this.user,this.inputText.getValue(),()=>{this.inputText.cleanValue()});
+    TchatManager.sendMessage(
+                              this.user,
+                              MyRef.get(NAME_REF_DATA_CONVERSATIO+this.user).getIDLastMessage(),
+                              this.inputText.getValue(),
+                              ()=>
+                              {
+                                this.inputText.cleanValue()
+                              });
   }
 }

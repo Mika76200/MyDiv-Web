@@ -26,12 +26,12 @@ class MyDivUserTchat extends MyDisplayDivVertical
     });
 
   }
-  sendRequestPush(idLastMessage)
+  addNewMessage(data)
   {
-    TchatManager.sendRequestPush(this.idUser,idLastMessage,(reponse)=>
-    {
-      this.divTchat.addLastMessage(reponse);
-    });
+    this.divTchat.addNewMessage(data);
   }
-
+  getIDLastMessage()
+  {
+    return this.divTchat.getIDLastMessage();
+  }
 }

@@ -21,24 +21,46 @@ class ConversationManager
       File::cleanConversation();
     }
   }
+  static function getConversation()
+  {
+    return  new ListMessageConversation(File::readFileConvers());
+  }
   static function sendCoversation():array
   {
-    $conversation = new ListMessageConversation(File::readFileConvers());
-    return $conversation->getConversation();
+    $convers = self::getConversation();
+    return $convers->getConversation();
   }
-  static function sendListLastMessage():array
+  static function sendListLastMessage()
   {
-    // initialise la reponce
-    $reponse= null;
-    if($reponse)
+    // initialise
+    $list = new MyListPush(0);
+    $convers = self::getConversation();
+    /// tchat 1
+    if($_POST['idMessageUser1'] != $convers->getIDLastMessage())
     {
-        return array('reponse' => TIMEOUT);
+      self::addNewMessageToListPush($list,$_POST['idMessageUser1']);
     }
-    return array('reponse' => NOREPONSE);;
+    // tchat 2
+    if($_POST['idMessageUser2'] != $convers->getIDLastMessage())
+    {
+      self::addNewMessageToListPush($list,$_POST['idMessageUser2']);
+    }
+    if($list->isViod())
+    {
+      return null;
+    }
+    return $list;
+  }
+  static function addNewMessageToListPush(MyListPush $l,int $keys)
+  {
+    $convers = self::getConversation();
+    $m = new MyMessagePush($convers->getMessage($keys+1));
+    $l->addToList($m);
   }
   static function addMessage():bool
   {
-    return File::writeFileConvers($_POST['id'],$_POST['message']);
+    $newID = $_POST['idLastMessage'] +1;
+    return File::writeFileConvers($newID,$_POST['id'],$_POST['message']);
   }
   static function isLimitMaxMessage():bool
   {

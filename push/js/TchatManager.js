@@ -3,12 +3,13 @@
 
 class TchatManager
 {
-  static sendMessage(idUser,testMessage,CALLBACK)
+  static sendMessage(idUser,idMessage,testMessage,CALLBACK)
   {
     var form = new FormData();
+        form.append('idLastMessage',idMessage);
         form.append('id',idUser);
         form.append('message',testMessage);
-        sendRequestForm(form,'/MyDiv-web/push/php/addMessagePush.php',CALLBACK);
+        sendResquetFormReponceJsonAsynchrone(form,'/MyDiv-web/push/php/addMessagePush.php',CALLBACK);
   }
   static setMessage(idUser,CALLBACK)
   {
@@ -19,17 +20,9 @@ class TchatManager
   static deleteMessage(idMessage,idUser,CALLBACK)
   {
     var form = new FormData();
-        form.append('idMessage',idMessage);
+        form.append('idLastMessage',idMessage);
         form.append('idUser',idUser);
         sendResquetFormReponceJson(form,'/MyDiv-web/push/php/deleteMessage.php',CALLBACK);
-  }
-  /////pushTchat
-  static sendRequestPush(idUser,idLastMessage,CALLBACK)
-  {
-    var form = new FormData();
-        form.append('idLastMessage',idLastMessage);
-        form.append('idUser',idUser);
-        sendResquetFormReponceJsonAsynchrone(form,'/MyDiv-web/push/php/getMessagePush.php',CALLBACK);
   }
 
 }

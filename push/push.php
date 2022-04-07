@@ -66,13 +66,18 @@
   </body>
   <footer>
   <script type="text/javascript" src="/MyDiv/MyDivDev.js"></script>
+  <script type="text/javascript" src="/MyDiv-web/push/js/defined.js"></script>
   <script type="text/javascript" src="/MyDiv-web/push/js/DataConversation.js"></script>
   <script type="text/javascript" src="/MyDiv-web/push/js/TchatManager.js"></script>
   <script type="text/javascript" src="/MyDiv-web/push/js/MyDivConversation.js"></script>
   <script type="text/javascript" src="/MyDiv-web/push/js/MyDivAddMessage.js"></script>
   <script type="text/javascript" src="/MyDiv-web/push/js/MyDivDeleteMessage.js"></script>
   <script type="text/javascript" src="/MyDiv-web/push/js/MyDivUserTchat.js"></script>
+  <script type="text/javascript" src="/MyDiv-web/push/js/PushManager.js"></script>
+
+
   <script type="text/javascript" src="/MyDiv-web/push/js/pushTchat.js"></script>
+
   </footer>
 
 </html>
